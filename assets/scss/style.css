@@ -134,6 +134,12 @@ img {
   color: #D9D9D9;
 }
 
+.yellow-dark-btn {
+  padding: 16px 40px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #FFBA33 0%, #DF9B96 48.44%, #BD7BFF 100%);
+}
+
 .fs-18 {
   font-size: 18px;
 }
@@ -617,4 +623,175 @@ header .navbar #offcanvas-btn {
     line-height: 20px;
     font-size: 14px;
   }
+}
+
+.webflow {
+  background-color: #0C0053;
+}
+.webflow .webflow-wrapper {
+  background-image: url(../img/webflow-bg.png);
+  background-repeat: no-repeat;
+  padding: 60px 60px 0px 120px;
+  border-radius: 48px;
+  margin-top: -340px;
+}
+@media (max-width: 768px) {
+  .webflow .webflow-wrapper {
+    background-image: url(../img/webflow-768-bg.png);
+    padding: 30px 30px 0px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .webflow .webflow-wrapper .webflow-left-wrapper img {
+    width: 329px;
+    height: 487px;
+  }
+}
+.webflow .webflow-wrapper .webflow-right-wrapper .webflow-right-head {
+  margin-bottom: 60px;
+}
+@media (max-width: 575px) {
+  .webflow .webflow-wrapper .webflow-right-wrapper .sirtaj-sub {
+    font-size: 14px;
+  }
+}
+.webflow .webflow-wrapper .sartaj-profile span svg {
+  width: 37.391px;
+  height: 37.391px;
+}
+.webflow .Microverse-wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  position: relative;
+}
+.webflow .Microverse-wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/micro-elements.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-width: 782px;
+  min-height: 428px;
+  bottom: 0;
+  left: 235px;
+}
+@media (max-width: 768px) {
+  .webflow .Microverse-wrapper::after {
+    min-width: 350px;
+    min-height: 260px;
+    left: 235px;
+    background-image: url(../img/micro-elements-768.png);
+  }
+}
+@media (max-width: 575px) {
+  .webflow .Microverse-wrapper::after {
+    min-width: 295px;
+    min-height: 160px;
+    left: 30px;
+    background-image: url(../img/micro-elements-768.png);
+  }
+}
+.webflow .Microverse-wrapper .Microverse-head {
+  margin-bottom: 60px;
+}
+.webflow .Microverse-wrapper .microverse-number {
+  background: linear-gradient(90deg, #FFBA33 0%, #DF9B96 48.44%, #BD7BFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  .webflow .Microverse-wrapper .micro-row {
+    row-gap: 40px;
+    align-items: center;
+  }
+}
+.webflow .Microverse-wrapper .micro {
+  gap: 50px;
+}
+
+.boost-brand {
+  padding: 120px 0;
+  background: #1B0262;
+  position: relative;
+}
+.boost-brand .boost-btn {
+  margin-top: 60px;
+}
+.boost-brand::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/boost-bg.png);
+  background-repeat: no-repeat;
+  right: -40px;
+  bottom: 115px;
+  width: 215px;
+  height: 215px;
+}
+.boost-brand::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/boost-bg-2.png);
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 166px;
+  left: 90px;
+  top: 65px;
+}
+.boost-brand .boost-elements {
+  padding: 40px 50px 40px 50px;
+  position: relative;
+  min-height: 650px;
+}
+.boost-brand .boost-elements::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 48px;
+  padding: 2px;
+  background: linear-gradient(180deg, rgb(113, 89, 255), rgba(113, 89, 255, 0.15));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.boost-brand .boost-elements .boost-head {
+  margin-bottom: 10px;
+}
+.boost-brand .boost-elements .boost-img {
+  margin-bottom: 40px;
+}
+
+.explore {
+  padding: 120px 0 380px 0;
+  background: #0C0053;
+}
+.explore .explore-top {
+  margin-bottom: 60px;
+}
+.explore .explore-top .explore-mini-head {
+  background: var(--Primary-gggger, linear-gradient(90deg, #FFBA33 0%, #DF9B96 48.44%, #BD7BFF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.explore .my-slider-progress {
+  background: #ccc;
+}
+.explore .my-slider-progress-bar {
+  background: greenyellow;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
+.explore .splide .explore-slide-head {
+  background: var(--Primary-gggger, linear-gradient(90deg, #FFBA33 0%, #DF9B96 48.44%, #BD7BFF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.explore .splide .splide__list li {
+  width: 25% !important;
+}
+.explore .splide .explore-elements {
+  width: 330px !important;
 }/*# sourceMappingURL=style.css.map */
