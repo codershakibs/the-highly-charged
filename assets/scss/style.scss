@@ -583,7 +583,7 @@ header {
 
 // metaverse start
 .metaverse {
-    padding: 120px 0;
+    padding: 120px 0 470px 0;
     background-image: url(../img/meta-bg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -707,8 +707,8 @@ header {
     gap: 30px;
 
     @media (max-height:575px) {
-        flex-direction: column;
-        flex-wrap: wrap;
+        // flex-direction: column;
+        // flex-wrap: wrap;
     }
 
     .builds {
@@ -985,6 +985,18 @@ header {
     padding: 120px 0 380px 0;
     background: #0C0053;
 
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(../img/explore-bg-elements.png);
+        background-repeat: no-repeat;
+        width: 515px;
+        height: 404px;
+        top: 6px;
+
+    }
+
     .explore-top {
         margin-bottom: 60px;
 
@@ -998,11 +1010,14 @@ header {
 
     // slider-style start
     .my-slider-progress {
-        background: #ccc;
+        background: #FFF;
+        max-width: 1410px;
+        margin: 0 auto;
     }
 
+
     .my-slider-progress-bar {
-        background: greenyellow;
+        background: #6C55F6;
         height: 2px;
         transition: width 400ms ease;
         width: 0;
@@ -1016,15 +1031,30 @@ header {
             -webkit-text-fill-color: transparent;
         }
 
+        .splide__track--ltr {
+            margin-bottom: 60px !important;
+        }
+
         .splide__list {
-            li {
-                width: calc(25%) !important;
+            .splide__slide {
+                opacity: .3;
+
+                &.is-visible {
+                    opacity: 1;
+                }
             }
         }
 
-        .explore-elements {
-            width: 330px !important;
+        .splide__arrow--prev {
+            display: none !important;
         }
+
+        .splide__arrow--next {
+            background: none !important;
+            background-image: url(../img/bgbg.png);
+            background-repeat: no-repeat;
+        }
+
 
 
 
@@ -1036,5 +1066,216 @@ header {
 
     // slider-style end
 
+
+}
+
+// explore end
+
+// launch start
+.launch {
+    background-color: #1B0262;
+    padding-bottom: 120px;
+
+
+
+
+    .launch-wrapper {
+        padding: 56px 0px 0 120px;
+        background-image: url(../img/launch-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-top: -280px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/launch-elements-bg-1.png);
+            background-repeat: no-repeat;
+            width: 215px;
+            height: 215px;
+            bottom: 158px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/launch-elements-bg-2.png);
+            background-repeat: no-repeat;
+            width: 782px;
+            height: 428px;
+            bottom: 0;
+            right: 14px;
+        }
+
+        .launch-left {
+            .launch-left-head {
+                margin-bottom: 20px;
+            }
+
+            .launch-btn {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .potencial {
+        padding-top: 120px;
+    }
+}
+
+// launch end
+
+// charged start
+.charged {
+    padding: 120px 0;
+    background: #0C0053;
+
+    .charged-top {
+        margin-bottom: 60px;
+    }
+
+    .charged-img-2 {
+        gap: 30px;
+    }
+}
+
+// charged end
+// tech start
+.tech {
+    background: #1B0262;
+    padding: 120px 0 0px 0;
+
+
+    .tech-top {
+        margin-bottom: 60px;
+    }
+
+    .most-wrapper-1 {
+        padding: 36px 60px 37px 60px !important;
+    }
+
+    .most-wrapper-2 {
+        padding: 33px 60px 31px 112px !important;
+    }
+
+    .tech-card-wrapper {
+        padding: 53px 60px 53px 80px;
+        position: relative;
+        min-height: 305px;
+        gap: 80px;
+        background-image: url(../img/tech-mini-bg.png);
+        background-repeat: no-repeat;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 48px;
+            padding: 2px;
+            background: linear-gradient(180deg, rgba(113, 89, 255, 1), rgba(113, 89, 255, 0.15));
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+
+        }
+
+        .tech-left {
+            img {
+                // max-width: 163px;
+                // max-height: 170px;
+            }
+        }
+
+        .tech-right {
+            .tech-right-head {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .launch-2-wrapper {
+        padding: 56px 0px 0 120px;
+        background-image: url(../img/launch-2-wrapper-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-top: 120px;
+        margin-bottom: -225px;
+
+        .launch-2-left {
+            .launch-2-left-head {
+                margin-bottom: 20px;
+            }
+
+            .launch-2-btn {
+                margin-top: 30px;
+            }
+        }
+    }
+
+}
+
+// tech end
+
+
+
+
+footer {
+    padding: 380px 0 15px 0;
+    background-image: url(../img/launch-2-bg.svg);
+    background-repeat: no-repeat;
+
+    .footer-socials {
+        gap: 21px;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+    .footer-links {
+        gap: 15px;
+
+        li {
+            list-style: none;
+
+            a {
+                color: #B1B4FF;
+            }
+        }
+    }
+
+    .footer-link-head {
+        margin-bottom: 30px;
+    }
+
+    form {
+        .footer-input {
+            border-radius: 100px;
+            border: 1px solid var(--Primary-gggger, #FFBA33) !important;
+            background: #0C0053;
+            padding: 14px 0 14px 30px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 28px;
+
+            }
+        }
+    }
+
+    .divider {
+        background: #2B1C83;
+        width: 1410px;
+        height: 1px;
+        margin: 30px 0;
+    }
 
 }
