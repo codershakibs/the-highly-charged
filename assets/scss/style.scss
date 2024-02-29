@@ -751,8 +751,6 @@ header {
         &:hover {
             background: linear-gradient(180deg, rgba(110, 87, 250, 0.30) 0%, rgba(110, 87, 250, 0.00) 100%);
             border-radius: 48px;
-
-
         }
 
         &::before {
@@ -1166,6 +1164,13 @@ header {
         gap: 80px;
         background-image: url(../img/tech-mini-bg.png);
         background-repeat: no-repeat;
+
+        &:hover {
+            &:hover {
+                background: linear-gradient(180deg, rgba(110, 87, 250, 0.30) 0%, rgba(110, 87, 250, 0.00) 100%);
+                border-radius: 48px;
+            }
+        }
 
         &::before {
             content: "";
